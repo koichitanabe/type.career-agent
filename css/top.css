@@ -1,1 +1,769 @@
+/* キービジュアル */
+.top-main {
+  margin-bottom: 6em;
+}
+.top-main-wrapper {
+  background-image: url(../img/main-kv01.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 8 / 3;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.top-main-wrapper .block-wrapper {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.top-main-wrapper h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.1em;
+}
+.top-main-wrapper h2 .main-ttl-s {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+.top-main-wrapper h2 .main-ttl-l {
+  font-size: 4.4rem;
+}
+.main-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.block-main-btn .btn-main-text {
+  position: relative;
+  top: 1.1em;
+  z-index: 1;
+  width: 7.5em;
+  color: #009E9F;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: #fff;
+  border: 2px solid #009E9F;
+  border-radius: 999px;
+  padding: 0.6em 0;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: brightness(1.15);
+}
+.block-main-btn {
+  width: 43em;
+  margin-left: 4em;
+}
+.block-main-btn .btn-base {
+  margin-left: unset;
+  margin-right: unset;
+}
+.top-icon-list {
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.top-icon-list img {
+  width: 100%;
+}
+.top-icon-list p:first-of-type img {
+  max-width: 206px;
+}
+.top-icon-list p:nth-of-type(2) img {
+  max-width: 315px;
+}
+.top-icon-list p:last-of-type img {
+  max-width: 300px;
+}
+.top-icon-list p:not(:last-child) {
+  margin-right: 2.4em;
+}
+/* type転職エージェントITとは? */
+#cAbout p.center {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3.4em;
+}
+.compnay-logo-wrapper {
+  background-color: #EFF4F8;
+  padding-bottom: 2.4em;
+}
+.compnay-logo-wrapper h3 {
+  background-color: #fff;
+  width: 10.6em;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 999px;
+  padding: 0.6em 0;
+  position: relative;
+  top: -1.1em;
+}
+.compnay-logo-img {
+  width: 100%;
+  height: 88px;
+  background: url(../img/slide-company-logo.png) 0 50% repeat-x;
+  background-size: auto 90px;
+  animation: companyLogoScroll 33s linear 0s infinite;
+  background-position: left top;
+}
 
+@keyframes companyLogoScroll {
+  0% {
+      background-position-x: 0
+  }
+
+  100% {
+      background-position-x: -2008px
+  }
+}
+
+
+/* type転職エージェントITの強み */
+#cPoint section {
+  text-align: center;
+}
+#cPoint section img {
+  width: auto;
+  height: 90px;
+  margin: 0 auto 1em;
+}
+#cPoint h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+#cPoint h3 span {
+  font-size: 1.8rem;
+}
+#cPoint .title-bold {
+  font-size: 5.6rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: .2em;
+}
+#cPoint .title-bold span {
+  font-size: 3.6rem;
+}
+#cPoint .text {
+  text-align: left;
+  line-height: 1.6;
+}
+#cPoint .notes {
+  text-align: left;
+  padding-top: .5em;
+}
+
+/* IT/Web専門キャリアアドバイザー紹介 */
+#cAdviser .box-size-m ul {
+  padding: 2em;
+}
+#cAdviser .ad-name {
+  font-size: 2.0rem;
+  font-weight: 700;
+  margin-bottom: .9em;
+}
+#cAdviser .ad-name span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-left: .8em;
+}
+#cAdviser .box-size-m .fb {
+  padding-bottom: 1.2em;
+}
+#cAdviser .box-size-m ul li:last-child {
+  line-height: 1.8;
+}
+#cAdviser section a {
+  display: block;
+  transition: all .3s;
+}
+#cAdviser section a:hover {
+  transform: translate(2px, 2px);
+  transition: all .3s;
+}
+/* IT/Webエンジニア向けの転職相談会  */
+#cSodan .box-size-m,
+#cIssue-job .box-size-s {
+  display: flex;
+  flex-direction: column;
+}
+#cSodan .label-pic {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #0096D1;
+  padding: 0.4em 0.8em;
+}
+#cSodan .lebel-icon {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+  flex-grow: 1;
+}
+#cSodan .lebel-icon li p {
+  color: #5776A8;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #E3E6EA;
+  padding: .2em 1.1em;
+  border-radius: 999px;
+  margin-bottom: .7em;
+}
+#cSodan .lebel-icon li:not(:last-child) {
+  margin-right: .7em;
+}
+#cSodan .box-inner .btn-link {
+  position: relative;
+  display: block;
+  align-self: flex-end;
+  color: #5776A8;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 2.1em;
+}
+#cSodan .box-inner .btn-link::after {
+  position: absolute;
+  content: '\e5cc';
+  font-family: 'Material Symbols Rounded';
+  color: #fff;
+  font-size: 2rem;
+  right: .05em;
+}
+#cSodan .box-inner .btn-link::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #5776A8;
+  right: 0;
+}
+/* IT/Webエンジニア向け求人特集 */
+#cIssue-job section h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  flex-grow: 1;
+  margin-bottom: 1.5em;
+}
+#cIssue-job section h3 span {
+  display: block;
+}
+/*  求人検索 */
+.frame-search {
+  display: flex;
+  width: 55%;
+  height: 7.6em;
+  margin: 0 auto 6em;
+  border: 1px solid #D0D0D0;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .3s;
+}
+.frame-search a:hover {
+  filter: brightness(1.2);
+  transition: all .3s;
+}
+.frame-search input {
+  width: 80%;
+  font-size: 1.6rem;
+  padding-left: 2.2em;
+}
+.frame-search input::placeholder {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5776A8;
+}
+.frame-search .btn-search {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #5776A8;
+  color: #fff;
+  margin-right: 2.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.frame-search .btn-search .material-symbols-rounded {
+  font-weight: 600;
+  font-size: 2.9rem;
+}
+.tab__menu {
+  background-color: #EFF4F8;
+  border-radius: 8px 8px 0 0;
+}
+.tab__menu li {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5776A8;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 1.2em 0;
+  cursor: pointer;
+}
+.tab__menu-item:first-child {
+  max-width: 344px;
+}
+.tab__menu-item:nth-child(2) {
+  max-width: 341px;
+}
+.tab__menu-item:last-child {
+  flex-grow: 1;
+}
+.tab__menu li:first-child {
+  border-radius: 8px 0 0 0;
+}
+.tab__menu li:last-child {
+  border-radius: 0 8px 0 0;
+}
+.tab__menu li span {
+  font-size: 2.2rem;
+}
+.tab__menu-item {
+  transition: all .3s;
+}
+.tab__menu-item.is-active {
+  background-color: #5776A8;
+  color: #fff;
+}
+.tab__panel-box {
+  display: none;
+}
+.tab__panel-box.is-show {
+  display: block;
+}
+.tab__panel {
+  border: 3px solid #5776A8;
+  border-radius: 0 0 8px 8px;
+  max-height: 470px;
+  overflow-y: scroll;
+}
+.tab__panel::-webkit-scrollbar {
+  width: 11px;
+}
+.tab__panel::-webkit-scrollbar-track {
+  background-color: #E3E6EA;
+  border-radius: 0 0 6px 0;
+}
+.tab__panel::-webkit-scrollbar-thumb {
+  background-color: #5776A8;
+  border-radius: 8px;
+}
+.tab__panel-box ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tab__panel-box ul li {
+  width: calc(100% / 3);
+  border-bottom: 1px solid #5776A8;
+}
+.tab__panel-box ul li:not(:nth-child(3n)) {
+  border-right: 1px solid #5776A8;
+}
+.tab__panel-box li:last-child,
+.tab__panel-box001 li:nth-last-child(2),
+.tab__panel-box003 li:nth-last-child(2) {
+  border-bottom: none;
+} 
+.tab__panel-box ul li a {
+  display: block;
+  color: #000;
+  position: relative;
+  font-size: 1.2rem;
+  padding: 1.5em 1em;
+  transition: all .3s;
+}
+.tab__panel-box ul li.line-low a {
+  padding-top: .9em;
+  padding-bottom: .9em;
+}
+.tab__panel-box ul li a:hover {
+  color: #5776A8;
+  transition: all .3s;
+}
+.tab__panel-box ul li a::after {
+  position: absolute;
+  content: "\e5cc";
+  font-family: 'Material Symbols Rounded';
+  top: 50%;
+  right: .5em;
+  font-size: 1.8rem;
+  transform: translateY(-50%);
+}
+
+/* 転職エージェントサービスの流れ */
+.block-flow {
+  margin-bottom: 2.5em;
+}
+.block-flow h3 {
+  position: relative;
+  background-color: #5776A8;
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 500;
+  border-radius: 8px 0 0 8px;
+  padding: 1.2em 1.3em;
+}
+.block-flow h3 span {
+  font-size: 3.0rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding-left: .2em;
+}
+.block-flow h3::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 12px solid #5776a8;
+  border-right: 0;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cotent-flow {
+  border-top: 1px solid #D0D0D0;
+  border-right: 1px solid #D0D0D0;
+  border-bottom: 1px solid #D0D0D0;
+  width: 100%;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+}
+.block-flow .flow-icon img {
+  width: auto;
+  height: 53px;
+}
+p.flow-icon {
+  width: 13em;
+  text-align: center;
+}
+.cotent-flow dt {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+}
+.cotent-flow dd {
+  font-size: 1.4rem;
+}
+
+/* IT転職に関する悩み一問一答 */
+#cNayami .block-wrapper {
+  margin-bottom: 6em;
+}
+dl.box-q {
+  position: relative;
+  background-color: #5776A8;
+  color: #fff;
+  margin: 1em 1em 2em;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 1.4em;
+  height: 7.8em;
+}
+dl.box-q dt,
+dl.box-a dt {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-right: 0.3em;
+}
+dl.box-q dd,
+dl.box-a dd {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+dl.box-q::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-top: 12px solid #5776a8;
+  border-bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+}
+dl.box-a {
+  padding: 1.8em;
+  display: flex;
+  align-items: flex-start;
+}
+dl.box-a dt {
+  color: #5776A8;
+}
+dl.box-a dd {
+  font-weight: normal;
+}
+/* IT/Webエンジニア転職成功事例 */
+.block-title {
+  border-radius: 8px 8px 0 0;
+  background-color: #FAF3E8;
+  display: flex;
+  align-items: center;
+  margin: 0 1em;
+}
+.block-title p:first-child {
+  margin-top: -20px;
+  margin-right: 3.6em;
+  margin-left: 2.4em;
+}
+.block-title p:last-child {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.block-title p img {
+  width: 100px;
+}
+#cStudycase .box-r-shadow {
+  padding: 1.8em;
+}
+#cStudycase .box-r-shadow dl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.8em;
+}
+#cStudycase .box-r-shadow dl dt {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.2em 0.8em;
+  background-color: #0096D1;
+  border-radius: 4px;
+  color: #fff;
+  margin-right: 1em;
+}
+#cStudycase .box-r-shadow dl dd {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+#cStudycase .box-price {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+#cStudycase .box-price p {
+  font-size: 1.6rem;
+}
+#cStudycase .box-price p:nth-child(2) {
+  color: #E8383D;
+  padding: 0 .5em;
+}
+#cStudycase .box-price p:last-child {
+  font-weight: 700;
+}
+#cStudycase .box-price p:last-child span {
+  font-size: 2.8rem;
+}
+/* IT/Webエンジニアの転職者の声 */
+#cVoice section {
+  margin-bottom: 3em;
+}
+#cVoice .block-flex {
+  align-items: center;
+  justify-content: center;
+}
+#cVoice .comment {
+  width: 67%;
+  position: relative;
+  background-color: #EFF4F8;
+  padding: 1.5em 1.75em;
+  font-size: 1.6rem;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+#cVoice .comment::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 12px solid #eff4f8;
+  border-right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -12px;
+}
+#cVoice section:nth-of-type(2) .comment::after {
+  border-right: 12px solid #eff4f8;
+  border-left: 0;
+  right: 0;
+  left: -12px;
+}
+#cVoice .icon-face {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-color: #FAF3E8;
+  border-radius: 50%;
+}
+#cVoice .icon-face img {
+  width: 100px;
+  padding-top: 5px;
+}
+#cVoice .box-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 18px;
+}
+#cVoice section:nth-of-type(even) .box-comment {
+  margin-left: 0;
+  margin-right: 18px;
+}
+#cVoice .box-comment p:last-child {
+  text-align: center;
+  font-size: 1.4rem;
+}
+#cVoice section:nth-of-type(2) .block-flex {
+  flex-direction: row-reverse;
+}
+/* IT/Webエンジニア転職者インタビュ */
+#cInterview p.text {
+  margin-bottom: 1.7em;
+}
+
+/* IT/Webエンジニアの転職ノウハウ */
+#cHowto .block-wrapper {
+  margin-bottom: 4em;
+  position: relative;
+}
+#cHowto section {
+  display: flex;
+  flex-direction: column;
+}
+#cHowto .title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 91px;
+}
+#cHowto h3 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1872B4;
+  font-weight: 700;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+#cHowto .thumb-pic {
+  width: 14em;
+  height: 14em;
+  margin: 0 auto 1.8em;
+}
+#cHowto .text {
+  flex-grow: 1;
+  margin-bottom: 1.8em;
+}
+#cHowto .box-inner {
+  padding-top: 0;
+}
+/*  IT/Webエンジニアの職種図鑑 */
+#cJob-map .block-wrapper {
+  margin-bottom: 4em;
+  position: relative;
+}
+.slide-content-wrapper {
+  max-width: 1040px;
+  overflow: hidden;
+}
+#cJob-map section {
+  display: flex;
+  flex-direction: column;
+  background-color: #EFF4F8;
+}
+#cJob-map .thumb-pic {
+  margin-bottom: 1.8em;
+}
+#cJob-map .thumb-pic img {
+  mix-blend-mode: multiply;
+}
+#cJob-map section .text {
+  flex-grow: 1;
+  margin-bottom: 1.1em;
+}
+/* type転職エージェントITのよくある質問  */
+#cQandA {
+  background-color: #EFF4F8;
+  padding: 3em 0 6em;
+}
+.block-q-wrapper {
+  background-color: #fff;
+  margin-bottom: 1.8em;
+  padding: 1.5em 2.4em 0;
+}
+.block-q-wrapper dt.block-flex {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5em;
+}
+.block-q-wrapper dt.block-flex p:nth-child(2) {
+  flex-grow: 1;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.block-q-wrapper dd {
+  padding-bottom: 2.4em;
+  padding-top: 1.2em;
+}
+.block-q-wrapper p.label {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-right: 0.7em;
+}
+.block-q-wrapper dt p.label {
+  color: #5776A8;
+}
+.block-q-wrapper dd p.label {
+  color: #009E9F;
+}
+.block-q-wrapper dd p.text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.block-q-wrapper dt .material-symbols-rounded {
+  width: 1.2em;
+  height: 1.2em;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #5776A8;
+  text-align: center;
+  font-weight: 600;
+  padding-top: .1em;
+}
+/* type転職エージェントITのよくある質問 */
+dl.js-slideUp dt {
+  cursor: pointer;
+}
+dl.js-slideUp dd {
+  display: none;
+}
+dl.js-slideUp dt.open .material-symbols-rounded {
+  transform: rotate(-180deg);
+}
